@@ -1,0 +1,112 @@
+
+
+
+
+<ion-toolbar color="primary"> 
+  <ion-title>AdoptaApp</ion-title>
+      <ion-buttons color="primary">
+      <ion-menu-button slot="start" autoHide="false" color="light"></ion-menu-button>
+      <ion-button href="http://localhost:8100/principal">
+        <ion-icon slot="end" name="home-outline"></ion-icon>
+      </ion-button>
+      </ion-buttons>
+    
+  </ion-toolbar>
+  
+  <ion-app>
+    
+      <ion-menu side="start" menuId="first" contentId="main">
+      <ion-header>
+        <ion-toolbar color="primary">
+          <ion-title>Menu</ion-title>
+        </ion-toolbar>
+      </ion-header>
+      <ion-content color="medium">
+        <ion-list color="medium">
+         
+          <ion-item href="http://localhost:8100/config" color="light">
+             Configuraciones 
+              <ion-icon name="construct-outline" slot="end">
+  
+              </ion-icon>
+          </ion-item>
+         
+          <ion-item href="http://localhost:8100/perfil" color="light">
+             Perfil 
+              <ion-icon name="person-outline" slot="end">
+               
+              </ion-icon>
+  
+          </ion-item>
+          
+          
+          <ion-item href="http://localhost:8100/politica" color="light">
+              Politicas y Condiciones 
+               <ion-icon name="warning-outline" slot="end">
+   
+               </ion-icon>
+           </ion-item>
+          
+          <ion-item href="http://localhost:8100/login" color="light">
+              Cerrar sesion 
+              <ion-icon name="exit-outline" slot="end">
+  
+              </ion-icon>
+          </ion-item>
+        </ion-list>
+      </ion-content>
+      
+    </ion-menu>
+  
+      <ion-router-outlet id="main"></ion-router-outlet>
+      
+  <ion-content [fullscreen]="true">
+    <ion-card-content>
+      <ion-card>
+        <ion-card-header >
+          <ion-img  src="https://www.purina-latam.com/sites/g/files/auxxlc391/files/styles/large/public/Purina%C2%AE%20Pro%20Plan%C2%AE%20Nota%20Cu%C3%A1ntos%20a%C3%B1os%20vive%20un%20perro%20de%20acuerdo%20a%20su%20raza.png?itok=uSmYV8mr"></ion-img>
+      
+          <ion-card-subtitle >
+             
+               
+          </ion-card-subtitle>
+          <ion-card-title>Toby</ion-card-title>
+        </ion-card-header>
+      
+        <ion-card-content>
+         Golden retriever
+         <ion-card-content>
+         Es un perro muy cariñoso
+        </ion-card-content>
+         Este es una forma ilustrativa puede ser modificado.
+       
+        
+        </ion-card-content>
+       
+      
+      </ion-card>
+    
+      <ion-card>
+        <ion-card-header >
+          <ion-img  src="https://s1.eestatic.com/2020/12/20/curiosidades/mascotas/544956360_167992877_1706x960.jpg"></ion-img>
+      
+          <ion-card-subtitle >
+             
+               
+          </ion-card-subtitle>
+          <ion-card-title>Simba</ion-card-title>
+        </ion-card-header>
+      
+        <ion-card-content>
+         Beagle 
+         <ion-card-content>
+         Es un perro muy dormilon
+        </ion-card-content>
+       
+        </ion-card-content>
+      </ion-card>
+    </ion-card-content> 
+  </ion-content>
+      
+    
+  </ion-app>

@@ -1,0 +1,59 @@
+
+<ion-header [translucent]="true">
+  <ion-toolbar color="primary">
+    <ion-title>
+      AdoptaApp
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-card>
+  <ion-card-header color="primary">
+  <ion-card-title>Login</ion-card-title>
+  </ion-card-header>
+<ion-card-content>
+  <form [formGroup]="formularioLogin" >
+    <ion-item color="light">
+      Adopta a un amigo
+    </ion-item>
+    
+    <ion-item>
+    
+    <ion-label position="floating">
+      Usuario
+    </ion-label>
+    <ion-input formControlName="user"></ion-input>
+  </ion-item>
+  
+  <ion-item>
+    <ion-label position="floating">Password</ion-label>
+    <ion-input formControlName="Password" type="password"></ion-input>
+  </ion-item>
+ 
+</form>
+<br>
+<ion-toolbar>
+<ion-button slot="start" color="primary" href="http://localhost:8100/registro" >
+  Registrate
+</ion-button>
+
+<ion-button slot="end" color="primary" href="http://localhost:8100/principal" >
+  Ingresar
+</ion-button>
+
+</ion-toolbar>
+<a color="dark" slot="end" href="http://localhost:8100/restaurar"> Olvide mi contrasenha</a>
+
+</ion-card-content>
+
+</ion-card>
+
+</ion-content>
+
+
+
+
+
+
+

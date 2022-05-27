@@ -1,0 +1,154 @@
+
+
+<ion-header>
+  <ion-toolbar color="primary">
+    <ion-title slot="start">POLITICAS Y CONDICIONES</ion-title>
+    <ion-buttons color="primary">
+      <ion-menu-button slot="start" autoHide="false" color="light"></ion-menu-button>
+      <ion-button href="http://localhost:8100/principal">
+        <ion-icon slot="end" name="home-outline"></ion-icon>
+      </ion-button>
+     </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+
+<ion-content>
+  <ion-card color="medium">
+  <ion-text color="primary">
+    <ion-list>
+    <ion-item>
+       <h5>1. Al utilizar cualquier servicio actual o futuro de <b>AdoptaApp</b>
+       se estara sujeto a los lineamientos y condiciones aplicables a tal o cual servicio.
+      </h5>
+    </ion-item>
+
+    <ion-item> 
+       <h5>2. <B>Cualquier Usuario </B> que desee acceder a usar la app y los Servicios podra hacerlo sujetandose a estas Politicas y Condiciones.
+       </h5>
+       </ion-item>
+
+       <ion-item>  
+          <h5>3. <B>Con su registro y utilizacion de la app</B>, los Usuarios estan manifestando su aceptacion, expresa e inequivoca de las Politicas y Condiciones.
+      </h5> 
+    </ion-item>
+
+      <ion-item>
+         <h5>4. La utilizacion de <b>AdoptaApp</b> queda estrictamente <b> PROHIBIDA RESPECTO A MENORES DE EDAD</b>, cuya responsabilidad recae en los padres o representantes legales.
+      </h5> 
+    </ion-item>
+
+      <ion-item> 
+          <h5>5. <b>AdoptaApp</b> no se hace responsable ante posibles conflictos que puedan ocurrir por los usos de forma indebida de la plataforma.
+      </h5>        
+    </ion-item>
+
+    <ion-item> 
+        <h5>6. CUALQUIER PERSONA QUE NO ACEPTE ESTAS POLITICAS Y CONDICIONES GENERALES, DEBERA ABSTENERSE DE UTILIZAR LA App Y LOS SERVICIOS DE  <b>AdoptaApp</b>
+    </h5>        
+  </ion-item>
+
+    </ion-list>
+  </ion-text>
+</ion-card>
+</ion-content>
+
+<ion-app>
+
+
+
+
+
+
+
+
+  <ion-menu side="start" menuId="first" contentId="main">
+    <ion-header>
+      <ion-toolbar color="primary">
+        <ion-title>Menu</ion-title>
+      </ion-toolbar>
+    </ion-header>
+    <ion-content color="medium">
+      <ion-list color="medium">
+       
+        <ion-item [routerLink]="['/config']" routerLinkActive="router-link-active" color="light">
+           Configuraciones 
+            <ion-icon name="construct-outline" slot="end">
+
+            </ion-icon>
+        </ion-item>
+       
+        <ion-item [routerLink]="['/perfil']" routerLinkActive="router-link-active" color="light">
+           Perfil 
+            <ion-icon name="person-outline" slot="end">
+             
+            </ion-icon>
+
+        </ion-item>
+       
+        
+        <ion-item [routerLink]="['/politica']" routerLinkActive="router-link-active" color="light">
+            Politicas y Condiciones 
+             <ion-icon name="warning-outline" slot="end">
+ 
+             </ion-icon>
+         </ion-item>
+        
+        <ion-item [routerLink]="['/login']" routerLinkActive="router-link-active" color="light">
+            Cerrar sesion 
+            <ion-icon name="exit-outline" slot="end">
+
+            </ion-icon>
+        </ion-item>
+      </ion-list>
+    </ion-content>
+    
+  </ion-menu>
+
+    <ion-router-outlet id="main"></ion-router-outlet>
+
+    <ion-content>
+      <ion-card color="medium">
+      <ion-text color="primary">
+        <ion-list>
+          <ion-item></ion-item>
+        <ion-item>
+           <h5>1. Al utilizar cualquier servicio actual o futuro de <b>AdoptaApp</b>
+           se estara sujeto a los lineamientos y condiciones aplicables a tal o cual servicio.
+          </h5>
+        </ion-item>
+    
+        <ion-item> 
+           <h5>2. <B>Cualquier Usuario </B> que desee acceder a usar la app y los Servicios podra hacerlo sujetandose a estas Politicas y Condiciones.
+           </h5>
+           </ion-item>
+    
+           <ion-item>  
+              <h5>3. <B>Con su registro y utilizacion de la app</B>, los Usuarios estan manifestando su aceptacion, expresa e inequivoca de las Politicas y Condiciones.
+          </h5> 
+        </ion-item>
+    
+          <ion-item>
+             <h5>4. La utilizacion de <b>AdoptaApp</b> queda estrictamente <b> PROHIBIDA RESPECTO A MENORES DE EDAD</b>, cuya responsabilidad recae en los padres o representantes legales.
+          </h5> 
+        </ion-item>
+    
+          <ion-item> 
+              <h5>5. <b>AdoptaApp</b> no se hace responsable ante posibles conflictos que puedan ocurrir por los usos de forma indebida de la plataforma.
+          </h5>        
+        </ion-item>
+  
+        <ion-item> 
+            <h5>6. CUALQUIER PERSONA QUE NO ACEPTE ESTAS POLITICAS Y CONDICIONES GENERALES, DEBERA ABSTENERSE DE UTILIZAR LA App Y LOS SERVICIOS DE  <b>AdoptaApp</b>
+        </h5>        
+      </ion-item>
+  
+        </ion-list>
+      </ion-text>
+    </ion-card>
+    </ion-content>
+  
+
+</ion-app>
+
+
